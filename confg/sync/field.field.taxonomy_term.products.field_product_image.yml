@@ -1,0 +1,38 @@
+uuid: 7b4e5dc1-7986-44ac-951a-dc3821c79fc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_product_image
+    - taxonomy.vocabulary.products
+  module:
+    - image
+id: taxonomy_term.products.field_product_image
+field_name: field_product_image
+entity_type: taxonomy_term
+bundle: products
+label: 'product image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

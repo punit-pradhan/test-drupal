@@ -1,0 +1,83 @@
+uuid: 2b518608-f708-4c82-a127-75508089e010
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.get_in_touch.field_city
+    - field.field.node.get_in_touch.field_email
+    - field.field.node.get_in_touch.field_first_name
+    - field.field.node.get_in_touch.field_last_name
+    - field.field.node.get_in_touch.field_message
+    - field.field.node.get_in_touch.field_number
+    - field.field.node.get_in_touch.field_state
+    - node.type.get_in_touch
+  module:
+    - user
+id: node.get_in_touch.default
+targetEntityType: node
+bundle: get_in_touch
+mode: default
+content:
+  field_city:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_first_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_last_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_message:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_number:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_state:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

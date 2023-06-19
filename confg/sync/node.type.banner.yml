@@ -1,0 +1,17 @@
+uuid: 9aa6b817-0d47-4dce-bbe9-efa8905499f0
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Banner
+type: banner
+description: 'its for Banner'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

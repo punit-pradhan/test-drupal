@@ -1,0 +1,34 @@
+uuid: 2c84cb26-d8e8-4766-9628-ab68228e68dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.get_in_touch.field_city
+    - field.field.node.get_in_touch.field_email
+    - field.field.node.get_in_touch.field_first_name
+    - field.field.node.get_in_touch.field_last_name
+    - field.field.node.get_in_touch.field_message
+    - field.field.node.get_in_touch.field_number
+    - field.field.node.get_in_touch.field_state
+    - node.type.get_in_touch
+  module:
+    - user
+id: node.get_in_touch.teaser
+targetEntityType: node
+bundle: get_in_touch
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_city: true
+  field_email: true
+  field_first_name: true
+  field_last_name: true
+  field_message: true
+  field_number: true
+  field_state: true

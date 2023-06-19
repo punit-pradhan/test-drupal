@@ -1,0 +1,20 @@
+uuid: bd8a95f5-f855-42a0-a8ba-09c1e45a589b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.blank_page
+  module:
+    - user
+id: node.blank_page.teaser
+targetEntityType: node
+bundle: blank_page
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

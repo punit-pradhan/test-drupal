@@ -1,0 +1,29 @@
+uuid: 8fd020d8-4ff9-4c16-8ff4-e1e5e89acc4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_product
+    - node.type.latest_news
+    - taxonomy.vocabulary.products
+id: node.latest_news.field_product
+field_name: field_product
+entity_type: node
+bundle: latest_news
+label: product
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      products: products
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

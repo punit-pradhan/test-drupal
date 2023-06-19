@@ -1,0 +1,22 @@
+uuid: 53abebb8-4a65-4a2b-b112-861239f5878c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.get_in_touch
+id: node.get_in_touch.promote
+field_name: promote
+entity_type: node
+bundle: get_in_touch
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

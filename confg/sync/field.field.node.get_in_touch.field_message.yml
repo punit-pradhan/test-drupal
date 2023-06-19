@@ -1,0 +1,19 @@
+uuid: 72e5b3a5-6708-421e-9043-3793dec921c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_message
+    - node.type.get_in_touch
+id: node.get_in_touch.field_message
+field_name: field_message
+entity_type: node
+bundle: get_in_touch
+label: message
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

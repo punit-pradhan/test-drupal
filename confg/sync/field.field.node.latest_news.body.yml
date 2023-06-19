@@ -1,0 +1,23 @@
+uuid: c2886d3a-fc4f-4f2d-aa27-a27e5a84990a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.latest_news
+  module:
+    - text
+id: node.latest_news.body
+field_name: body
+entity_type: node
+bundle: latest_news
+label: 'news body'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary
